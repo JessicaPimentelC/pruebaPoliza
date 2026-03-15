@@ -1,0 +1,13 @@
+package com.example.prueba_poliza;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class PruebaPolizaApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
