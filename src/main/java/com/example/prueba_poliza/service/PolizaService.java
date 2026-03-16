@@ -16,7 +16,20 @@ public class PolizaService {
     private RiesgoRepository riesgoRepository;
 
     public List<Poliza> listar(String tipo, String estado){
-        return polizaRepository.findByTipoAndEstado(tipo, estado);
+
+        if(tipo == null && estado == null){
+            return polizaRepository.findAll();
+        }
+
+        if(tipo != null && estado != null){
+            return polizaRepository.findByTipoAndEstado(tipo, estado);
+        }
+
+        if(tipo != null){
+            return polizaRepository.findByTipo(tipo);
+        }
+
+        return polizaRepository.findByEstado(estado);
     }
 
     public List<Riesgo> riesgos(Long polizaId){

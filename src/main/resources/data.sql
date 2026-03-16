@@ -1,5 +1,7 @@
-INSERT INTO POLIZA (ID, TIPO, ESTADO) VALUES (1, 'vida', 'activa');
-INSERT INTO POLIZA (ID, TIPO, ESTADO) VALUES (2, 'hogar', 'activa');
+INSERT INTO POLIZA (ID, TIPO, ESTADO) VALUES (1, 'individual', 'activa');
+INSERT INTO POLIZA (ID, TIPO, ESTADO) VALUES (2, 'colectiva', 'activa');
+INSERT INTO POLIZA (ID, TIPO, ESTADO) VALUES (3, 'individual', 'cancelada');
+INSERT INTO POLIZA (ID, TIPO, ESTADO) VALUES (4, 'colectiva', 'cancelada');
 
 INSERT INTO RIESGO (ID, POLIZA_ID, ESTADO) VALUES (1, 1, 'activo');
 INSERT INTO RIESGO (ID, POLIZA_ID, ESTADO) VALUES (2, 1, 'activo');

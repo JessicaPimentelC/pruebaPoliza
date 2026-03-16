@@ -21,8 +21,8 @@ public class PolizaController {
 
     @GetMapping
     public List<Poliza> listar(
-            @RequestParam String tipo,
-            @RequestParam String estado){
+            @RequestParam(required = false) String tipo,
+            @RequestParam(required = false) String estado){
 
         return polizaService.listar(tipo, estado);
     }
